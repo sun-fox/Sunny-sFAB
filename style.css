@@ -1,0 +1,92 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  background:#7d58c4;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#fff;
+  display:flex;
+  justify-content: center;
+  padding-top:10%;
+}
+
+.fab-container{
+  position:fixed;
+  bottom:75px;
+  right:75px;
+  z-index:999;
+  cursor:pointer;
+}
+
+.fab-icon-holder{
+  width:60px;
+  height:60px;
+  border-radius:100%;
+  background: #cc3757;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.fab-icon-holder:hover{
+  opacity: 0.8;
+}
+
+.fab-icon-holder i{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+
+  font-size:25px;
+  color:#fff;
+}
+
+.fab{
+  width:75px;
+  height:75px;
+  background:#7ebe4a;
+}
+
+.fab-options{
+  list-style-type: none;
+  margin:0;
+  position:absolute;
+  bottom:90px;
+  right:0px;
+  opacity:0;
+  
+  transition: all 0.3s ease;
+  transform: scale(0);
+  transform-origin: 90% bottom;
+}
+.fab:hover + .fab-options,.fab-options:hover{
+  opacity:1;
+  transform:scale(1);
+}
+
+.fab-options li{
+  display:flex;
+  justify-content: flex-end;
+  padding:5px;
+}
+
+.fab-options:hover{
+  transform:scale(1.2);
+}
+
+.fab-label{
+  padding:2px 5px 2px 5px;
+  align-self:center;
+  user-select: none;
+  white-space: nowrap;
+  /* border-radius: 3px; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  background: rgba(0,0,0,0.1);
+  color:#fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  margin-right: 10px;
+}

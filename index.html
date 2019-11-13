@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/CSS">
+    <script src="https://kit.fontawesome.com/ef3a823ed6.js" crossorigin="anonymous"></script>
     <title>Sunny'sFAB</title>
 </head>
 <body>
-    <div class='fab-multi-action'>
-        <button class='action-button'><span class='fa fa-plus'></span></button>
-        <ul class='actions'>
-          <li><a><span class='fa fa-google-plus'></span></a></li>
-          <li><a><span class='fa fa-reddit'></span></a></li>
-          <li><a><span class='fa fa-facebook'></span></a></li>
-          <li><a><span class='fa fa-twitter'></span></a></li>
-        </ul>
-      </div>
+   <h1>Sunny's Floating Action Button(FAB)</h1>
+   <div class="fab-container">
+     <div class="fab fab-icon-holder">
+       <i class="fas fa-plus"></i>
+     </div>
+     <ul class="fab-options">
+        <li>
+          <span class="fab-label">Video Playback</span>
+          <div class="fab-icon-holder">
+              <i class="fas fa-video"></i>
+          </div>
+        </li>
+        <li>
+            <span class="fab-label">Location identifier</span>
+            <div class="fab-icon-holder">
+                <i class="fas fa-search-location"></i>
+            </div>
+        </li>
+        <li>
+            <span class="fab-label">Messages</span>
+            <div class="fab-icon-holder">
+                <i class="fas fa-sms"></i>
+            </div>
+        </li>
+        <li>
+            <span class="fab-label">Camera</span>
+            <div class="fab-icon-holder">
+              <i class="fas fa-camera"></i>
+          </div>
+        </li>
+     </ul>
+   </div>
 </body>
 </html>

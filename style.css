@@ -30,9 +30,6 @@ h1{
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-.fab-icon-holder:hover{
-  opacity: 0.8;
-}
 
 .fab-icon-holder i{
   display:flex;
@@ -42,6 +39,20 @@ h1{
 
   font-size:25px;
   color:#fff;
+}
+
+.fab-label{
+  padding:2px 5px 2px 5px;
+  align-self:center;
+  user-select: none;
+  white-space: nowrap;
+  /* border-radius: 3px; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  background: rgba(0,0,0,0.1);
+  color:#fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  margin-right: 10px;
 }
 
 .fab{
@@ -64,15 +75,6 @@ h1{
   transform: scale(0);
   transform-origin: 90% bottom;
 }
-.fab:hover + .fab-options,.fab-options:hover{
-  opacity:1;
-  transform:scale(1);
-}
-
-.fab:hover{
-  transform:scale(1.2);
-  transform:rotate(135deg);
-}
 
 .fab-options li{
   display:flex;
@@ -80,23 +82,29 @@ h1{
   padding:5px;
 }
 
-/* .fab-options:hover{
-  transform:scale(1.2);
+.fab:hover + .fab-options,.fab-options:hover{
+  opacity:1;
+  transform:scale(1);
+}
+
+/* .propadd{
+  opacity:1;
+  transform:scale(1);
 } */
 
-.fab-label{
-  padding:2px 5px 2px 5px;
-  align-self:center;
-  user-select: none;
-  white-space: nowrap;
-  /* border-radius: 3px; */
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:16px;
-  background: rgba(0,0,0,0.1);
-  color:#fff;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-  margin-right: 10px;
+.fab:hover{
+  transform:scale(1.2);
+  transform:rotate(135deg);
+} 
+
+.fab-options:hover{
+  transform:scale(1.2);
 }
+
+.fab-icon-holder:hover{
+  opacity: 0.8;
+}
+
 
 #op1{
   background: rgb(223, 212, 51);

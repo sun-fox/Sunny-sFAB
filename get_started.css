@@ -1,0 +1,127 @@
+body {margin:auto;padding:0;}
+
+.cPanelContainer {
+  margin:auto;
+  /* padding:60px 0 0 0; */
+  /* background: linear-gradient(0deg, rgba(34,193,195,0.6811099439775911) 0%, rgba(189,253,45,0.2329306722689075) 100%); */
+}
+
+.cPanelHeader {
+  margin:auto;
+  padding:50px 50px;
+  background:#0078d7;
+  text-align:center;
+}
+
+.cPanelHeader > h3, .cPanelHeader > h5 {
+  margin:auto;
+  color:#f0f0f0;
+  font-weight:100;
+}
+
+.cPanelFooter {
+  margin:auto;
+  padding:50px;
+  background:#0078d7;
+  text-align:center;
+}
+
+.cPanelFooter > span {
+  color:#f0f0f0;
+  font-size:15px;
+  font-weight:400;
+}
+
+.cPanelContent {
+  margin:auto;
+  padding:0;
+  background:#2d93e4;
+  text-align:center;
+  display:flex;
+}
+
+.cPanelSection {
+  position:relative;
+  flex:1;
+  transition:0.3s;
+  -moz-transition:0.3s;
+  -o-transition:0.3s;
+  -webkit-transition:0.3s;
+  padding:25px;
+  border-right:1px solid #2d93e4;
+  border-left:1px solid #2d93e4;
+}
+
+.cPanelSection:hover {
+  background:#0078d7;
+  flex:2;
+  border-right:1px solid #f0f0f0;
+  border-left:1px solid #f0f0f0;
+}
+
+.cPanelContent > div:first-child {
+  border-left:none;
+}
+
+.cPanelContent > div:last-child {
+  border-right:none;
+}
+
+.cPanelContent > div:last-child:after {
+  display:none;
+}
+
+.cPanelContent > div:after {
+  position:absolute;
+  top:50%;
+  left:100%;
+  transform:translate(-50%, -50%);
+  z-index:1;
+  opacity:1;
+  padding:5px 13px;
+  border-radius:50%;
+  background:#2d93e4;
+  transition:0.3s;
+  -moz-transition:0.3s;
+  -o-transition:0.3s;
+  -webkit-transition:0.3s;
+  content: "\f061";
+	font-size:25px;
+  font-family: FontAwesome;
+  color:#f0f0f0;
+}
+
+.cPanelContent h5 {
+  color:#f0f0f0;
+  font-weight:400;
+}
+
+.cPanelContent p {
+  font-size:14px;
+  color:#f0f0f0;
+  padding:0 10%;
+}
+
+.cPanelArrowPulse {
+  position:absolute;
+  width:0%;
+  padding-bottom:0%;
+  border-radius:50%;
+  top:50%;
+  left:100%;
+  transform:translate(-50%, -50%);
+  background:#f0f0f0;
+  opacity:0;
+  z-index:2;
+  
+  animation-name:cPanelArrowPulseAnimation;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease-out;
+}
+
+@keyframes cPanelArrowPulseAnimation {
+  0% { opacity:1; width:0%; padding-bottom:0%; }
+  50% { opacity:0; width:20%; padding-bottom:20%; }
+  100% { opacity:0; width:0%; padding-bottom:0%; }
+}

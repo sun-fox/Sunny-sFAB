@@ -81,6 +81,7 @@ body {margin:auto;padding:0;}
   padding:5px 13px;
   border-radius:50%;
   background:#2d93e4;
+  /* adding transition time with other browser support */
   transition:0.3s;
   -moz-transition:0.3s;
   -o-transition:0.3s;
@@ -109,17 +110,18 @@ body {margin:auto;padding:0;}
   border-radius:50%;
   top:50%;
   left:100%;
+  /* setting the translate of the circle pulses */
   transform:translate(-50%, -50%);
   background:#f0f0f0;
   opacity:0;
   z-index:2;
-  
+  /* connecting the animation keyframe with the pulse substrate */
   animation-name:cPanelArrowPulseAnimation;
   animation-duration:2s;
   animation-iteration-count:infinite;
   animation-timing-function:ease-out;
 }
-
+/* The arrow pulse that is seen as a blink is generatred with the help of keyframes i.e., at begining it is visible and later on width of the pulse increses in the middle of time later vanishes and this process keeps going on. */
 @keyframes cPanelArrowPulseAnimation {
   0% { opacity:1; width:0%; padding-bottom:0%; }
   50% { opacity:0; width:20%; padding-bottom:20%; }

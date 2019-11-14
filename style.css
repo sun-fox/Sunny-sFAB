@@ -13,15 +13,17 @@ h1{
   justify-content: center;
   padding-top:10%;
 }
-
+/* styling for the container of the FAB button */
 .fab-container{
   position:fixed;
   bottom:75px;
   right:75px;
+  /* z-axis offeset is increased */
   z-index:999;
+  /* cursor turns into a pointer here */
   cursor:pointer;
 }
-
+/* styling for the icon holder */
 .fab-icon-holder{
   width:60px;
   height:60px;
@@ -30,17 +32,17 @@ h1{
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-
+/* flexbox enbled and the items are forced to be at the center along both the axes. */
 .fab-icon-holder i{
   display:flex;
   align-items: center;
   justify-content: center;
+  /* should take the entire height of the parent div */
   height:100%;
-
   font-size:25px;
   color:#fff;
 }
-
+/* It is the styling for the text that is present beside the option */
 .fab-label{
   padding:2px 5px 2px 5px;
   align-self:center;
@@ -55,6 +57,7 @@ h1{
   margin-right: 10px;
 }
 
+/* styling for the FAB plus button */
 .fab{
   width:75px;
   height:75px;
@@ -62,7 +65,7 @@ h1{
   transition:all 0.4s ease-in-out;
   transform: scale(1);
 }
-
+/* styling for the options in the FAB */
 .fab-options{
   list-style-type: none;
   margin:0;
@@ -70,9 +73,11 @@ h1{
   bottom:90px;
   right:0px;
   opacity:0;
-  
+  /* transition is set with transition-timing-function being ease and the transition-duratrion set to 3ms */
   transition: all 0.3s ease;
+  /* scale is fixed to zero i.e., intially it is not visible */
   transform: scale(0);
+  /* the apperance durong sclae will have from the bottom right corner of the page */
   transform-origin: 90% bottom;
 }
 
@@ -82,6 +87,7 @@ h1{
   padding:5px;
 }
 
+/*When the FAB is hovered the fab-options class style are applied to it and get removed as soon as th cirsor loses overlap.  */
 .fab:hover + .fab-options,.fab-options:hover{
   opacity:1;
   transform:scale(1);
@@ -92,41 +98,51 @@ h1{
   transform:scale(1);
 } */
 
+/* on hover of the FAB it rotates to cross and by making a turn of 145 degress. */
 .fab:hover{
   transform:scale(1.2);
   transform:rotate(135deg);
 } 
 
+/* on hover the FAB options scale a bit with 20% size.  */
 .fab-options:hover{
   transform:scale(1.2);
 }
 
+/* on hover the opacity of the fab icons reduce by 20% */
 .fab-icon-holder:hover{
   opacity: 0.8;
 }
 
-
+/* adjusting the color of option 1. */
 #op1{
   background: rgb(223, 212, 51);
 }
+/* adjusting the color of option 1 on hover state */
 #op1:hover{
   transform:scale(1.2);
 }
+/* adjusting the color of option 2. */
 #op2{
   background: rgb(224, 147, 74);
 }
+/* adjusting the color of option 2 on hover state */
 #op2:hover{
   transform:scale(1.2);
 }
+/* adjusting the color of option 3. */
 #op3{
   background: rgb(72, 157, 197);
 }
+/* adjusting the color of option 3 on hover state */
 #op3:hover{
   transform:scale(1.2);
 }
+/* adjusting the color of option 4. */
 #op4{
   background: rgb(206, 63, 63);
 }
+/* adjusting the color of option 4 on hover state */
 #op4:hover{
   transform:scale(1.2);
 }

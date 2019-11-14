@@ -71,7 +71,7 @@ h1{
 
 .fab:hover{
   transform:scale(1.2);
-  transform:rotate(45deg);
+  transform:rotate(135deg);
 }
 
 .fab-options li{
@@ -80,9 +80,9 @@ h1{
   padding:5px;
 }
 
-.fab-options:hover{
+/* .fab-options:hover{
   transform:scale(1.2);
-}
+} */
 
 .fab-label{
   padding:2px 5px 2px 5px;
@@ -96,4 +96,29 @@ h1{
   color:#fff;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   margin-right: 10px;
+}
+
+#op1{
+  background: rgb(223, 212, 51);
+}
+#op1:hover{
+  transform:scale(1.2);
+}
+#op2{
+  background: rgb(224, 147, 74);
+}
+#op2:hover{
+  transform:scale(1.2);
+}
+#op3{
+  background: rgb(72, 157, 197);
+}
+#op3:hover{
+  transform:scale(1.2);
+}
+#op4{
+  background: rgb(206, 63, 63);
+}
+#op4:hover{
+  transform:scale(1.2);
 }
